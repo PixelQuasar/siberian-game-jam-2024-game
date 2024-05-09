@@ -20,5 +20,13 @@ if global.move_speed != 0{
 	
 }
 
+if global.roll {
+	if roll_frame <= 4 {
+		roll_frame += 0.3;	
+	}
+} else {
+	roll_frame = 0;
+}
+
 x = round(x);
 y = round(y);
