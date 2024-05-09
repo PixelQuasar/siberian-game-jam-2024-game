@@ -1,7 +1,7 @@
 event_inherited();
 
 
-damage = 5;
+damage = 2;
 spd = 5;
 lifetime = 240;
 image_speed = 0;
