@@ -48,4 +48,8 @@ function movement_manager() {
 	y = round(y);
 }
 
+if keyboard_check_pressed(vk_space) {
+	create_random_item(irandom(room_width), irandom(room_height))	
+}
+
 movement_manager();
