@@ -44,8 +44,16 @@ function movement_manager() {
 		}	
 	}
 
-	x = round(x);
-	y = round(y);
+if global.roll {
+	if roll_frame <= 4 {
+		roll_frame += 0.3;	
+	}
+} else {
+	roll_frame = 0;
+}
+
+x = round(x);
+y = round(y);
 }
 
 if keyboard_check_pressed(vk_space) {
