@@ -22,3 +22,7 @@ if global.move_speed != 0{
 
 x = round(x);
 y = round(y);
+
+if keyboard_check_pressed(vk_space) {
+	create_random_item(irandom(room_width), irandom(room_height))	
+}

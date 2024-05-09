@@ -9,3 +9,7 @@ global.camera_mode = false;
 global.movedir = 0;
 global.roll = false;
 global.move = false;
+
+global.crit_chance = 0.05
+global.armor = 0
+
