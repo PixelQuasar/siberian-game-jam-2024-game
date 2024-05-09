@@ -41,7 +41,7 @@ if global.move {
 	} else {
 		global.move_speed = global.max_speed
 	}
-} else if !global.roll{
+} else if !global.roll {
 	if global.move_speed > 0 {
 		global.move_speed = lerp(global.move_speed, 0, 0.5);
 	}
