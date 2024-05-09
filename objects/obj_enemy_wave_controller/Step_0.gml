@@ -25,7 +25,8 @@ function generate_wave() {
 	}
 	
 	array_foreach(chosen_enemies, function(enemy) {
-		var n = get_random_spawn_point()
+		var n = get_random_spawn_point();
+		show_debug_message(enemy.name);
 		instance_create_depth(n.x, n.y, 0, enemy.object)
 	})
 }

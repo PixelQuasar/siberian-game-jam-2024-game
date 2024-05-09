@@ -3,7 +3,7 @@ global.camera_mode = false;
 global.solid_objs = [obj_wall]
 
 // player
-global.max_hp = 20;
+global.max_hp = 2000;
 global.hp = global.max_hp;
 global.crit_chance = 0.1;
 global.damage = 1;

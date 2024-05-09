@@ -10,8 +10,8 @@
   "name":"obj_keyboard_hint",
   "overriddenProperties":[],
   "parent":{
-    "name":"other",
-    "path":"folders/Objects/other.yy",
+    "name":"siberian-game-jam-2024-game",
+    "path":"siberian-game-jam-2024-game.yyp",
   },
   "parentObjectId":null,
   "persistent":false,
