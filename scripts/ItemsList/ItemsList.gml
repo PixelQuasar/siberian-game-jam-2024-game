@@ -23,7 +23,7 @@ global.items = {
 		visible: false,
 		sprite: spr_energydrink,
 		on_pickup: function() {
-			global.max_speed += 1
+			global.max_speed += 0.2
 		}
 	},
 }

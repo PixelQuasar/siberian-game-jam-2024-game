@@ -47,7 +47,7 @@ if global.move {
 	}
 }
 
-if keyboard_check_pressed(vk_space){
+if keyboard_check_pressed(vk_space) and !global.roll{
 	global.roll = true;
 	alarm[0] = 20;
 }
