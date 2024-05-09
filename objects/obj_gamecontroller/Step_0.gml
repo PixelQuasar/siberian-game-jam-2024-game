@@ -51,3 +51,8 @@ if keyboard_check_pressed(vk_space){
 	global.roll = true;
 	alarm[0] = 20;
 }
+
+if (!instance_exists(obj_item) && !instance_exists(obj_enemy_wave_controller)) {
+	start_waves(3, 100 + 20 * cur_level)
+	cur_level++
+}
