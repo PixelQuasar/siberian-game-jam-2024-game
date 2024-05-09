@@ -10,8 +10,8 @@ actions_pool = [
 	},
 	{
 		name: "ACTION_MOVE_FROM_PLAYER",
-		max_len: 60,
-		min_len: 120
+		max_len: 10,
+		min_len: 20
 	},
 	{
 		name: "ACTION_SHOOT",
