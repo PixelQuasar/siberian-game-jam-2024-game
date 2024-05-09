@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_1",
-    "path":"sprites/spr_enemy_1/spr_enemy_1.yy",
+    "name":"spr_gunner",
+    "path":"sprites/spr_gunner/spr_gunner.yy",
   },
   "spriteMaskId":null,
   "visible":true,

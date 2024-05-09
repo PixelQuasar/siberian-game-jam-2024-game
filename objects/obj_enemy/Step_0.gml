@@ -27,6 +27,16 @@ function action_handler () {
 }
 
 
+function draw_handler() {
+	if !(dir < 9 || dir > 270) {
+		image_xscale = -1;
+	} else {
+		image_xscale = 1;
+	}
+}
+
+
+draw_handler();
 action_handler();
 player_damage_collision_handler();
 movement_handler(lengthdir_x(spd, dir), lengthdir_y(spd, dir));

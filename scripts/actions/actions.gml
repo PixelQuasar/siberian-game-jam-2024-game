@@ -14,14 +14,13 @@ function action_move_random () {
 
 function action_move_to_player () {
 	if (action_timer == action_max_timer) { // first frame of an action
-		spd = default_spd;
+		spd = default_spd * 1.2;
 		var _player_x = instance_exists(obj_player) ? obj_player.x : x;
 		var _player_y = instance_exists(obj_player) ? obj_player.y : y;
 		dir = point_direction(x, y, _player_x, _player_y);
 	}
 	else if (action_timer == 1) { // last frame of an action
 		spd = 0;
-		dir = 0;
 	}
 	else { // action on-update
 		// empty
@@ -37,7 +36,6 @@ function action_move_from_player () {
 	}
 	else if (action_timer == 1) { // last frame of an action
 		spd = 0;
-		dir = 0;
 	}
 	else { // action on-update
 		// empty
@@ -46,14 +44,13 @@ function action_move_from_player () {
 
 function action_move_rush() {
 	if (action_timer == action_max_timer) { // first frame of an action
-		spd = default_spd * 2.5;
+		spd = default_spd * 4;
 		var _player_x = instance_exists(obj_player) ? obj_player.x : x;
 		var _player_y = instance_exists(obj_player) ? obj_player.y : y;
 		dir = point_direction(x, y, _player_x, _player_y);
 	}
 	else if (action_timer == 1) { // last frame of an action
 		spd = 0;
-		dir = 0;
 		action_max_timer = global.IDLE_ACTION.min_len; // time to rest after productive rush!
 		action_timer = global.IDLE_ACTION.min_len;
 		current_action = global.IDLE_ACTION;
