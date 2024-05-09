@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_tileset0",
   "bboxMode":0,
-  "bbox_bottom":118,
+  "bbox_bottom":169,
   "bbox_left":1,
   "bbox_right":152,
   "bbox_top":1,
