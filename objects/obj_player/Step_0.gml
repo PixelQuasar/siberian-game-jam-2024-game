@@ -1,5 +1,9 @@
 if global.move_speed != 0{
 	
+	if global.roll{
+		global.move_speed = global.max_speed;
+	}
+	
 	var mspeed = global.move_speed+global.roll;
 	var mspeed_diag = (global.move_speed+global.roll)*0.75;
 	
