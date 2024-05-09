@@ -9,8 +9,8 @@
   "name":"obj_camera",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"technical",
+    "path":"folders/Objects/technical.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_camera",
-    "path":"sprites/spr_camera/spr_camera.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":false,
 }

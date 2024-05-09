@@ -56,8 +56,38 @@ x = round(x);
 y = round(y);
 }
 
+if (global.immune_to_damage_timer > 0) {
+	global.immune_to_damage_timer--;
+}
+
+if (global.hp <= 0 && !global.player_is_dead) {
+	player_death_handler();
+}
+
+movement_manager();
+
+if (mouse_check_button_released(mb_left)) {
+	var _dir = point_direction(x, y, mouse_x, mouse_y);
+	
+	var _new_projectile = instance_create_layer(
+		x, y,
+		"Instances", obj_player_swing_attack
+	);
+	_new_projectile.dir = _dir;
+} else if (mouse_check_button_released(mb_right)) {
+	var _dir = point_direction(x, y, mouse_x, mouse_y);
+	
+	var _new_projectile = instance_create_layer(
+		x, y,
+		"Instances", obj_player_projectile
+	);
+	_new_projectile.dir = _dir;
+}
+
+
+
+
 if keyboard_check_pressed(vk_space) {
 	create_random_item(irandom(room_width), irandom(room_height))	
 }
 
-movement_manager();

@@ -12,18 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2d8c78bb-f9ce-4ffd-94e1-0811a83e3c79","name":"2d8c78bb-f9ce-4ffd-94e1-0811a83e3c79","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"ae8f4fd7-f1e3-4aee-b694-ec41314a8413","name":"ae8f4fd7-f1e3-4aee-b694-ec41314a8413","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"2c74064f-025b-4e63-8e92-7d22f478b8ab","blendMode":0,"displayName":"default","isLocked":false,"name":"2c74064f-025b-4e63-8e92-7d22f478b8ab","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9e41d684-8a05-447d-b07c-c4362a35983d","blendMode":0,"displayName":"default","isLocked":false,"name":"9e41d684-8a05-447d-b07c-c4362a35983d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_camera",
   "nineSlice":null,
-  "origin":4,
+  "origin":0,
   "parent":{
     "name":"technical",
     "path":"folders/Sprites/technical.yy",
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2d8c78bb-f9ce-4ffd-94e1-0811a83e3c79","path":"sprites/spr_camera/spr_camera.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cacb1026-4736-42bb-975a-a1f7f3c24f17","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae8f4fd7-f1e3-4aee-b694-ec41314a8413","path":"sprites/spr_camera/spr_camera.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"77ea11c4-4b52-41c9-a2cb-dfd81fcc3fbc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":8,
-    "yorigin":8,
+    "xorigin":0,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
