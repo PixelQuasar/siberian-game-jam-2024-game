@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"count_enemy_damage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"count_enemy_damage",
+  "parent":{
+    "name":"stats",
+    "path":"folders/Scripts/stats.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
