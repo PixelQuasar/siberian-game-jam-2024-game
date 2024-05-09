@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"movement_handler",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"movement_handler",
+  "parent":{
+    "name":"character",
+    "path":"folders/Scripts/character.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
