@@ -17,8 +17,8 @@ function action_move_random () {
 function action_move_player () {
 	if (action_timer == action_max_timer) { // first frame of an action
 		spd = default_spd;
-		var _player_x = obj_player ? obj_player.x : x;
-		var _player_y = obj_player ? obj_player.y : y;
+		var _player_x = instance_exists(obj_player) ? obj_player.x : x;
+		var _player_y = instance_exists(obj_player) ? obj_player.y : y;
 		dir = point_direction(x, y, _player_x, _player_y);
 	}
 	else if (action_timer == 1) { // last frame of an action
@@ -33,8 +33,8 @@ function action_move_player () {
 function action_move_rush () {
 	if (action_timer == action_max_timer) { // first frame of an action
 		spd = default_spd * 2.5;
-		var _player_x = obj_player ? obj_player.x : x;
-		var _player_y = obj_player ? obj_player.y : y;
+		var _player_x = instance_exists(obj_player) ? obj_player.x : x;
+		var _player_y = instance_exists(obj_player) ? obj_player.y : y;
 		dir = point_direction(x, y, _player_x, _player_y);
 	}
 	else if (action_timer == 1) { // last frame of an action

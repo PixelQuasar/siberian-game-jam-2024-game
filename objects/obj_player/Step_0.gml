@@ -1,19 +1,3 @@
-function enemy_collision_manager() {
-	if (global.immune_to_damage_timer != 0) { // ignoring the damage
-	global.immune_to_damage_timer--;
-		return;
-	}
-	
-	if (place_meeting(x, y, obj_enemy))	{
-		global.immune_to_damage_timer = global.default_immune_to_damage_timer;
-		global.hp -= 
-	}
-}
-
-function projectile_collision_manager() {
-
-}
-
 function movement_manager() {
 	if global.move_speed != 0{
 	
@@ -65,5 +49,3 @@ function movement_manager() {
 }
 
 movement_manager();
-projectile_collision_manager();
-enemy_collision_manager();
