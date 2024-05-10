@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy_spawn_point",
+  "%Name":"obj_room_contoller",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemy_spawn_point",
+  "name":"obj_room_contoller",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemies",
-    "path":"folders/Objects/enemies.yy",
+    "name":"technical",
+    "path":"folders/Objects/technical.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_spawn_point",
-    "path":"sprites/spr_enemy_spawn_point/spr_enemy_spawn_point.yy",
+    "name":"spr_spawnable",
+    "path":"sprites/spr_spawnable/spr_spawnable.yy",
   },
   "spriteMaskId":null,
   "visible":false,
