@@ -71,11 +71,11 @@ if run_frame <= 3 {
 }
 
 
-if (global.pause)
+if (global.pause) {
 	return
+}
 
-if keyboard_check(ord("D")) or keyboard_check(ord("W"))
-or keyboard_check(ord("A")) or keyboard_check(ord("S")){
+if keyboard_check(ord("D")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("S")){
 	global.move = true;
 } else {
 	global.move = false;
@@ -100,6 +100,7 @@ if !global.roll {
 		global.movedir = 7;
 	}
 }
+
 if mouse_check_button_pressed(mb_middle){
 	if global.camera_mode {
 		global.camera_mode = false;
