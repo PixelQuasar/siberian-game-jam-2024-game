@@ -1,16 +1,13 @@
 function player_damage_collision_handler() {
-	if (global.immune_to_damage_timer != 0) { // ignoring the damage
-	global.immune_to_damage_timer--;
-		return;
-	}
+	if (is_dead || global.immune_to_damage_timer)
+		return
 	
-	if (place_meeting(x, y, obj_player))	{
+	if (place_meeting(x, y, obj_player) && !global.player_is_dead)	{
 		global.immune_to_damage_timer = global.default_immune_to_damage_timer;
 		screenshake(60, 5);
+		obj_player.impulse_dir = point_direction(x, y, obj_player.x, obj_player.y);
+		obj_player.impulse_spd = 10;
 		global.hp -= count_enemy_damage(damage);
-		if (global.hp < 0) {
-			death_handler();
-		}
 	}
 }
 
@@ -26,7 +23,26 @@ function action_handler () {
 	action_timer--;
 }
 
+function death_handler() {
+	is_dead = true
+	instance_destroy(self)
+}
 
+function draw_handler() {
+	if !(dir < 9 || dir > 270) {
+		image_xscale = -1;
+	} else {
+		image_xscale = 1;
+	}
+}
+
+
+draw_handler();
 action_handler();
 player_damage_collision_handler();
+
+if (hp <= 0 && !is_dead) {
+	death_handler()
+}
+
 movement_handler(lengthdir_x(spd, dir), lengthdir_y(spd, dir));

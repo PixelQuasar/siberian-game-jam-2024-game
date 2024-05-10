@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_dm_d",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":47,
-  "bbox_left":6,
-  "bbox_right":47,
+  "bbox_left":21,
+  "bbox_right":42,
   "bbox_top":13,
   "collisionKind":1,
   "collisionTolerance":0,

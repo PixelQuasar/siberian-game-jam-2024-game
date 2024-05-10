@@ -20,8 +20,8 @@ actions_pool = [
 	},
 	{
 		name: "ACTION_IDLE",
-		max_len: 60,
-		min_len: 120
+		max_len: 30,
+		min_len: 60
 	}
 ];
 
