@@ -1,5 +1,12 @@
 //controls (stupid)
 
+if (keyboard_check(ord("E"))) {
+	global.e_pressed = true;
+}
+else {
+	global.e_pressed = false;
+}
+
 if keyboard_check(ord("D")) or keyboard_check(ord("W"))
 or keyboard_check(ord("A")) or keyboard_check(ord("S")){
 	global.move = true;
