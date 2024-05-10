@@ -44,13 +44,18 @@ function movement_manager() {
 		}	
 	}
 
-	if global.roll {
-		if roll_frame <= 4 {
-			roll_frame += 0.3;	
-		}
-	} else {
-		roll_frame = 0;
+if run_frame <= 3 {
+		run_frame += global.max_speed/30;	
+} else {
+	run_frame = 0;	
+}
+
+if global.roll {
+	if roll_frame <= 4 {
+		roll_frame += 0.3;	
 	}
+} else {
+	roll_frame = 0;	}
 
 	impulse_spd  = max(0, impulse_spd - 1);
 	movement_handler(lengthdir_x(impulse_spd, impulse_dir), lengthdir_y(impulse_spd, impulse_dir));

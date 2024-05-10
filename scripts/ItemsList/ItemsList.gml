@@ -1,7 +1,7 @@
 global.items = {
 	bullet: {
 		name: "Lucky bullet",
-		description: "Increasing critical damage chance. \nCritical damage = 200% of  basic damage.",
+		description: "Increases critical strike chance. \nCritical strike deals double damage.",
 		visible: false,
 		sprite_id: 0,
 		on_pickup: function() {
@@ -10,7 +10,7 @@ global.items = {
 	},
 	life_potion: {
 		name: "Life potion",
-		description: "Increasing max HP.",
+		description: "Increases max health.",
 		visible: false,
 		sprite_id: 1,
 		on_pickup: function() {
@@ -19,14 +19,14 @@ global.items = {
 		}
 	},
 	showel: {
-		name: "Brand new showel",
-		description: "Increasing damage and attack speed.",
+		name: "Brand new shovel",
+		description: "Increases damage and attack speed.",
 		visible: false,
 		sprite_id: 2,
 		on_pickup: function() {
+			global.max_speed += 0.2
 			global.damage += 5;
-			global.attack_speed *= 0.85;
-		}
+			global.attack_speed *= 0.85;		}
 	},
 }
 
