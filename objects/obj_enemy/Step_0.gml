@@ -25,6 +25,7 @@ function action_handler () {
 
 function death_handler() {
 	is_dead = true
+	instance_create_depth(x, y, 0, obj_smoke);
 	instance_destroy(self)
 }
 

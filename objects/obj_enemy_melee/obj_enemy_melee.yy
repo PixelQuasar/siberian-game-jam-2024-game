@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy",
-    "path":"sprites/spr_enemy/spr_enemy.yy",
+    "name":"spr_melee_idle",
+    "path":"sprites/spr_melee_idle/spr_melee_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
