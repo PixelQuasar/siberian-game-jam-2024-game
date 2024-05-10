@@ -10,5 +10,11 @@ global.enemies = {
 		description: "Стрелок",
 		object: obj_enemy_gunner,
 		points: 20
-	}
+	},
+	spreader: {
+		name: "Тройник",
+		description: "Тройник",
+		object: obj_enemy_spreader,
+		points: 25
+	},
 }

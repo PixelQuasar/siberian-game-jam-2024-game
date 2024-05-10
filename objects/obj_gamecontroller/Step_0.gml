@@ -18,11 +18,11 @@ if keyboard_check(ord("D")) or keyboard_check(ord("W"))
 or keyboard_check(ord("A")) or keyboard_check(ord("S")){
 	global.move = true;
 } else {
-	global.move = false;	
+	global.move = false;
 }
 
 if !global.roll {
-	
+
 	if keyboard_check(ord("D")) and keyboard_check(ord("W")){
 		global.movedir = 2;
 	} else if keyboard_check(ord("A")) and keyboard_check(ord("W")){

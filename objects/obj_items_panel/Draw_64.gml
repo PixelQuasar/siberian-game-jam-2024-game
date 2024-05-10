@@ -6,7 +6,7 @@ for (var i = 0; i < array_length(items_names); i++) {
 	var yy = y_start + (i div items_per_row) * (y_frame_size + y_offset)
 	var item = global.items[$ items_names[i]]
 	//draw_sprite_ext(spr_item_frame, 0, xx, yy, gui_scale, gui_scale, 0, c_white, 1)
-	draw_sprite_ext(spr_power_item, item.sprite_id, xx, yy, gui_scale, gui_scale, 0, c_white, 1)
+	draw_sprite_ext(spr_power_item, item.sprite_id, xx + left_offset, yy + top_offset, gui_scale, gui_scale, 0, c_white, 1)
 	draw_text_transformed(xx, yy, global.items_collected[$ items_names[i]], gui_scale, gui_scale, 0)
 	
 	var mxx = window_mouse_get_x()

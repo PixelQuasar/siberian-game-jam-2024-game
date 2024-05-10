@@ -72,5 +72,3 @@ if !(sin(1 / global.immune_to_damage_timer * 500) < 0) {
 //	  image_index = 0	
 //}
 
-draw_sprite_ext(spr_health_bar, 0, x, y - 40, global.hp / global.max_hp, 1,0, 
-				make_color_rgb(min(255, 510 * (1 - global.hp / global.max_hp)), min(255, 510 * (global.hp / global.max_hp)), 0), 1)
