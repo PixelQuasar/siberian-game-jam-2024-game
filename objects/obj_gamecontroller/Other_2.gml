@@ -5,6 +5,10 @@ global.e_pressed = true;
 global.f_pressed = true;
 global.difficulty = 100;
 global.cur_level = 0;
+global.attack_move_speed = 5;
+global.ricochet_amount = 0;
+global.dodge_chance = 0;
+global.pause = false;
 global.difficulties = [
 	{
 		name: "blue",

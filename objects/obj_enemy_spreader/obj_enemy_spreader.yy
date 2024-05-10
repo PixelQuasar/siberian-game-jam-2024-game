@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spreader",
-    "path":"sprites/spr_spreader/spr_spreader.yy",
+    "name":"spr_gunner",
+    "path":"sprites/spr_gunner/spr_gunner.yy",
   },
   "spriteMaskId":null,
   "visible":true,
