@@ -17,4 +17,4 @@ title = "SAMPLE TITLE";
 subtitle = "Sample subtitle";
 icon = spr_power_item;
 icon_id = 0;
-skip_msg = "press E to continue"
+skip_msg = "Нажмите E, чтобы продолжить."

@@ -36,7 +36,9 @@ function draw_handler() {
 	}
 }
 
-
+if (global.pause || is_appearing)
+	return
+	
 draw_handler();
 action_handler();
 player_damage_collision_handler();

@@ -15,9 +15,13 @@ global.movedir = 0;
 global.roll = false;
 global.move = false;
 global.crit_chance = 0.05
+global.attack_move_speed = 5;
 global.armor = 0
+global.ricochet_amount = 0
 global.default_immune_to_damage_timer = 120;
 global.immune_to_damage_timer = 0;
 global.player_is_dead = false
+
+global.pause = false
 
 cur_level = 0

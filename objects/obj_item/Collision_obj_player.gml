@@ -10,5 +10,7 @@ _window.title = global.items[$ item].name;
 _window.subtitle = global.items[$ item].description;
 _window.icon_id = global.items[$ item].sprite_id;
 
+global.pause++
+
 
 instance_destroy(self)

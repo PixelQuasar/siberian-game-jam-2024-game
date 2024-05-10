@@ -6,7 +6,8 @@ function start_waves(waves_amount, wave_points) {
 
 global.generatable_enemies = [
 	global.enemies.warrior,
-	global.enemies.gunner
+	global.enemies.gunner,
+	global.enemies.spreader,
 ]
 
 function get_random_spawn_point() {

@@ -81,3 +81,35 @@ function action_shoot() {
 	}
 	
 }
+
+function action_spread_shoot() {
+	if (action_timer == action_max_timer) { // first frame of an action
+		if (!instance_exists(obj_player)) return;
+	
+		var _dir = point_direction(x, y, obj_player.x, obj_player.y);
+	
+		var n = instance_create_layer(
+			x, y,
+			"Instances", obj_enemy_gunner_projectile
+		);
+		n.dir = _dir;
+		
+		n = instance_create_layer(
+			x, y,
+			"Instances", obj_enemy_gunner_projectile
+		);
+		n.dir = _dir + 15;
+		
+		n = instance_create_layer(
+			x, y,
+			"Instances", obj_enemy_gunner_projectile
+		);
+		n.dir = (_dir + 360 - 15) % 360;
+	}
+	else if (action_timer == 1) { // last frame of an action
+		// EMPTY
+	}
+	else { // action on-update
+		// EMPTY
+	}
+}
