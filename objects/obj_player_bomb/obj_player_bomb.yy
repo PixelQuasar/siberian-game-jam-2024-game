@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_fly_message",
+  "%Name":"obj_player_bomb",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_fly_message",
+  "name":"obj_player_bomb",
   "overriddenProperties":[],
   "parent":{
-    "name":"misc",
-    "path":"folders/Objects/misc.yy",
+    "name":"projectiles",
+    "path":"folders/Objects/projectiles.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_player_bomb",
+    "path":"sprites/spr_player_bomb/spr_player_bomb.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

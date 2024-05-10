@@ -124,6 +124,8 @@ if global.move {
 if keyboard_check_pressed(vk_space) and !global.roll{
 	global.roll = true;
 	alarm[0] = 20;
+	if (global.roll_bomb_scale > 0)
+		instance_create_depth(x, y, 0, obj_player_bomb)
 }
 
 if (global.immune_to_damage_timer > 0) {
@@ -159,7 +161,7 @@ if (mouse_check_button_released(mb_left)) {
 
 
 
-if keyboard_check_pressed(vk_space) {
-	create_random_item(irandom(room_width), irandom(room_height))	
+if keyboard_check_pressed(ord("G")) {
+	create_random_item(x, y)	
 }
 

@@ -31,7 +31,7 @@ function enemy_damage_collision_handler() {
 			dmg *= 2
 			create_fly_message(x, y, "Crit!")
 		}
-		n.hp -= dmg;
+		n.get_hit(dmg);
 		if (can_pierce)
 			return
 		

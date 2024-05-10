@@ -21,7 +21,8 @@ function spawn_portals() {
 			}
 		}
 		_new_portal.next_room = global.game_rooms[irandom(array_length(global.game_rooms) - 1)];
-		_new_portal.difficulty = irandom_range(_diff.min_val, _diff.max_val);
+		_new_portal.difficulty = irandom_range(_diff.min_points_val, _diff.max_points_val);
+		_new_portal.waves_amount = irandom_range(_diff.min_waves_val, _diff.max_waves_val)
 	}
 }
 
@@ -36,7 +37,12 @@ function spawn_items() {
 
 function generate_wave() {
 	// wave notification
-	create_fly_message(obj_player.x, obj_player.y, "Wave " + string(cur_wave), 120, 0.5)
+	create_fly_message(window_get_width() / 2, window_get_height() / 2, "Волна " + string(cur_wave), {
+		fly_time: 120,
+		fly_speed: 0.5,
+		font: fnt_title,
+		gui: true,
+	})
 
 	var cur_points = wave_points
 	var enemies_pool = []
@@ -72,10 +78,20 @@ function generate_wave() {
 }
 
 if (instance_number(obj_enemy) == 0) {
+	if (!is_wave_cleared) {
+		is_wave_cleared = true
+		create_fly_message(window_get_width() / 2, window_get_height() / 2, "Волна зачищена", {
+			fly_time: 120,
+			fly_speed: 0.5,
+			font: fnt_title,
+			gui: true,
+		})
+	}
 	if (cur_wave < waves_amount) {
 		if (cur_wave_cooldown <= 0) {
 			cur_wave++
 			generate_wave()
+			is_wave_cleared = false
 			cur_wave_cooldown = def_wave_cooldown
 		} else {
 			cur_wave_cooldown--

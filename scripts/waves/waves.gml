@@ -18,3 +18,29 @@ function get_random_spawn_point() {
 	}
 	return point
 }
+
+global.difficulties = [
+	{
+		name: "blue",
+		min_points_val: 50,
+		max_points_val: 200,
+		min_waves_val: 2,
+		max_waves_val: 4,
+	},
+	{
+		name: "purple",
+		min_points_val: 150,
+		max_points_val: 300,
+		min_waves_val: 2,
+		max_waves_val: 4,
+	},
+	{
+		name: "red",
+		min_points_val: 250,
+		max_points_val: 300,
+		min_waves_val: 2,
+		max_waves_val: 4,
+	}
+]
+
+global.game_rooms = [rm_room_1, rm_room_2, rm_room_3]

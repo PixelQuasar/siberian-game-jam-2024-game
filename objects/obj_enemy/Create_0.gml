@@ -22,4 +22,6 @@ global.IDLE_ACTION = {
 	min_len: 120
 };
 
+var n = instance_create_layer(x, y - 40, "Instances_overlay", obj_enemy_healthbar)
+n.linked_object = self
 

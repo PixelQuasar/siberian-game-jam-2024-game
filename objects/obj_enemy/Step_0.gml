@@ -36,6 +36,10 @@ function draw_handler() {
 	}
 }
 
+function get_hit(damage) {
+	hp -= damage
+}
+
 if (global.pause || is_appearing)
 	return
 	

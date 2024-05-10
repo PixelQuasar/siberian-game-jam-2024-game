@@ -13,7 +13,7 @@ if global.roll {
 	gpu_set_fog(false, c_white,0,1000)
 	if global.movedir == 2 || global.movedir == 3
 		|| global.movedir == 4 {
-			draw_sprite(spr_dm_roll_u,roll_frame,x,y);
+			draw_sprite(spr_dm_roll_d,roll_frame,x,y);
 		} else {
 			draw_sprite(spr_dm_roll_d,roll_frame,x,y);
 		}
