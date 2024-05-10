@@ -1,6 +1,6 @@
 global.items = {
 	bullet: {
-		name: "Золотая пуля",
+		name: "Счастливая пуля",
 		description: "Увеличивает скорость снарядов.",
 		visible: false,
 		sprite_id: 0,
@@ -29,7 +29,7 @@ global.items = {
 		}
 	},
 	boot: {
-		name: "Ботинок",
+		name: "Ковбойский ботинок",
 		description: "Увеличивает скорость передвижения.",
 		visible: false,
 		sprite_id: 3,
@@ -47,12 +47,13 @@ global.items = {
 		}
 	},
 	clover: {
-		name: "Клевер",
-		description: "Увеличивает шанс крита.",
+		name: "3.5-листный клевер",
+		description: "Увеличивает шанс крита и уклонения.",
 		visible: false,
 		sprite_id: 7,
 		on_pickup: function() {
-			global.crit_chance += 0.1
+			global.crit_chance += 0.1;
+			global.dodge_chance += 0.1;
 		}
 	},
 }
