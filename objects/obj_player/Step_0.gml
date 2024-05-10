@@ -44,16 +44,19 @@ function movement_manager() {
 		}	
 	}
 
-if global.roll {
-	if roll_frame <= 4 {
-		roll_frame += 0.3;	
+	if global.roll {
+		if roll_frame <= 4 {
+			roll_frame += 0.3;	
+		}
+	} else {
+		roll_frame = 0;
 	}
-} else {
-	roll_frame = 0;
-}
 
-x = round(x);
-y = round(y);
+	impulse_spd  = max(0, impulse_spd - 1);
+	movement_handler(lengthdir_x(impulse_spd, impulse_dir), lengthdir_y(impulse_spd, impulse_dir));
+
+	x = round(x);
+	y = round(y);
 }
 
 if (global.immune_to_damage_timer > 0) {
