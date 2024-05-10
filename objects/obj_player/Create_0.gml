@@ -9,4 +9,7 @@ attacking = false;
 impulse_spd = 0;
 impulse_dir = 0;
 
+can_shoot = true;
+can_swing = true;
+
 instance_create_layer(x, y - 40, "Instances_overlay", obj_player_healthbar)

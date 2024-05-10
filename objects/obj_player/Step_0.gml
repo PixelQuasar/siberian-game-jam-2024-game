@@ -133,7 +133,7 @@ if (global.hp <= 0 && !global.player_is_dead) {
 
 movement_manager();
 
-if (mouse_check_button_released(mb_left)) {
+if (mouse_check_button(mb_left) and can_shoot) {
 	var _dir = point_direction(x, y, mouse_x, mouse_y);
 	
 	var _new_projectile = instance_create_layer(
@@ -142,7 +142,18 @@ if (mouse_check_button_released(mb_left)) {
 		//"Instances", obj_player_swing_attack
 	);
 	_new_projectile.dir = _dir;
-} else if (mouse_check_button_released(mb_right)) {
+	
+	can_shoot = false;
+	var shoot_speed = 20-(global.attack_speed*0.3)
+	
+	if shoot_speed < 0 {
+		shoot_speed = 1;	
+	}
+	
+	alarm[2] = shoot_speed;
+
+	
+} else if (mouse_check_button(mb_right) and can_swing) {
 	var _dir = point_direction(x, y, mouse_x, mouse_y);
 	
 	var _new_projectile = instance_create_layer(
@@ -151,6 +162,14 @@ if (mouse_check_button_released(mb_left)) {
 		//"Instances", obj_player_projectile
 	);
 	_new_projectile.dir = _dir;
+	
+	can_swing = false;
+	var swing_speed = 40-(global.attack_speed*0.3)
+	
+	if swing_speed < 0 {
+		swing_speed = 1;	
+	}
+	alarm[1] = swing_speed;
 }
 
 
