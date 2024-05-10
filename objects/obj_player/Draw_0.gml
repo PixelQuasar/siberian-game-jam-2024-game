@@ -36,9 +36,11 @@ if global.roll {
 			gpu_set_fog(false, c_white,0,1000)
 		}else if global.movedir == 1 {
 			draw_sprite_ext(spr_dm_run_r, run_frame, x, y, 1, 1, 0, c_white, 1 );
+			draw_sprite_ext(spr_dm_arm_run_r, run_frame, x, y, 1, 1, 0, c_white, 1 );
 			gpu_set_fog(false, c_white,0,1000)
 		}else if global.movedir == 5 {
 			draw_sprite_ext(spr_dm_run_r, run_frame, x, y, -1, 1, 0, c_white, 1 );
+			draw_sprite_ext(spr_dm_arm_run_r, run_frame, x, y, -1, 1, 0, c_white, 1 );
 			gpu_set_fog(false, c_white,0,1000)
 		}
 	} else {
@@ -49,11 +51,20 @@ if global.roll {
 				draw_sprite(spr_dm_arm_u,run_frame,x,y);
 			}
 			gpu_set_fog(false, c_white,0,1000)
-		} else {
+		} else if global.movedir == 6 || global.movedir == 7
+		|| global.movedir == 8 {
 			draw_sprite(spr_dm_d,0,x,y);
 			if !attacking{
 				draw_sprite(spr_dm_arm_d,run_frame,x,y);
 			}
+			gpu_set_fog(false, c_white,0,1000)
+		} else if global.movedir == 1 {
+			draw_sprite_ext(spr_dm_r, run_frame, x, y, 1, 1, 0, c_white, 1 );
+			draw_sprite_ext(spr_dm_arm_r, run_frame, x, y, 1, 1, 0, c_white, 1 );
+			gpu_set_fog(false, c_white,0,1000)
+		} else if global.movedir == 5 {
+			draw_sprite_ext(spr_dm_r, run_frame, x, y, -1, 1, 0, c_white, 1 );
+			draw_sprite_ext(spr_dm_arm_r, run_frame, x, y, -1, 1, 0, c_white, 1 );
 			gpu_set_fog(false, c_white,0,1000)
 		}
 	}

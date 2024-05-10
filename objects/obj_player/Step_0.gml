@@ -49,11 +49,6 @@ if run_frame <= 3 {
 } else {
 	run_frame = 0;	
 }
-	if run_frame <= 3 {
-			run_frame += global.max_speed/20;
-	} else {
-		run_frame = 0;
-	}
 
 	if global.roll {
 		if roll_frame <= 4 {

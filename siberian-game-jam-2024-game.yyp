@@ -93,6 +93,7 @@
     {"id":{"name":"spr_dm_arm_d","path":"sprites/spr_dm_arm_d/spr_dm_arm_d.yy",},},
     {"id":{"name":"spr_dm_arm_r","path":"sprites/spr_dm_arm_r/spr_dm_arm_r.yy",},},
     {"id":{"name":"spr_dm_arm_run_d","path":"sprites/spr_dm_arm_run_d/spr_dm_arm_run_d.yy",},},
+    {"id":{"name":"spr_dm_arm_run_r","path":"sprites/spr_dm_arm_run_r/spr_dm_arm_run_r.yy",},},
     {"id":{"name":"spr_dm_arm_run_u","path":"sprites/spr_dm_arm_run_u/spr_dm_arm_run_u.yy",},},
     {"id":{"name":"spr_dm_arm_u","path":"sprites/spr_dm_arm_u/spr_dm_arm_u.yy",},},
     {"id":{"name":"spr_dm_d","path":"sprites/spr_dm_d/spr_dm_d.yy",},},
