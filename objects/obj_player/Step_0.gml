@@ -50,6 +50,13 @@ if run_frame <= 3 {
 	run_frame = 0;	
 }
 
+if attack_frame < 3.0{
+		attack_frame += 0.1;
+} else {
+	attack_frame = 3;
+	attacking = false;
+}
+
 	if global.roll {
 		if roll_frame <= 4 {
 			roll_frame += 0.3;
@@ -163,6 +170,8 @@ if (mouse_check_button(mb_left) and can_shoot) {
 	);
 	_new_projectile.dir = _dir;
 	
+	attack_frame = 0;
+	attacking = true;
 	can_swing = false;
 	var swing_speed = 40-(global.attack_speed*0.3)
 	
