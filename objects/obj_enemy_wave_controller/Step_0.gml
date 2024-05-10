@@ -17,6 +17,7 @@ function spawn_portals() {
 			}
 			case "red": {
 				_new_portal.sprite_index = spr_red_portal;
+				_new_portal.spawn_boss = true
 				break;
 			}
 		}
@@ -67,6 +68,10 @@ function generate_wave() {
 			if (enemy.points <= cur_points)
 				array_push(enemies_pool, enemy)
 		}
+	}
+	
+	if (spawn_boss && cur_wave == waves_amount) {
+		array_push(chosen_enemies, global.enemies.boss)
 	}
 	
 	// spawn enemies

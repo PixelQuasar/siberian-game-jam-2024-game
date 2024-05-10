@@ -1,14 +1,17 @@
-function start_waves(waves_amount, wave_points) { 
+function start_waves(waves_amount, wave_points, spawn_boss = false) { 
 	show_debug_message(123123);
 	var n = instance_create_depth(0, 0, 0, obj_enemy_wave_controller)
 	n.waves_amount = waves_amount
 	n.wave_points = wave_points
+	n.spawn_boss = spawn_boss
 }
 
 global.generatable_enemies = [
 	global.enemies.warrior,
 	global.enemies.gunner,
 	global.enemies.spreader,
+	global.enemies.tower,
+	global.enemies.summoner,
 ]
 
 function get_random_spawn_point() {

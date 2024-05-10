@@ -3,7 +3,6 @@ if (global.pause) {
 }
 
 cur_timer++
-show_debug_message(cur_timer)
 if (cur_timer >= def_timer && !is_detonated) {
 	is_detonated = true
 	sprite_index = spr_player_bomb_boom

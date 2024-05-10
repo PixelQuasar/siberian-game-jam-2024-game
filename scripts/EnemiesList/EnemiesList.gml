@@ -17,4 +17,22 @@ global.enemies = {
 		object: obj_enemy_spreader,
 		points: 25
 	},
+	tower: {
+		name: "Башня",
+		description: "Башня",
+		object: obj_enemy_tower,
+		points: 30
+	},
+	summoner: {
+		name: "Призыватель",
+		description: "Призыватель",
+		object: obj_enemy_summoner,
+		points: 50
+	},
+	boss: {
+		name: "Босс",
+		description: "Босс",
+		object: obj_enemy_boss,
+		points: 999
+	},
 }

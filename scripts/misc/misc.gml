@@ -6,3 +6,7 @@ function create_fly_message(xx, yy, message, settings = {}) {
 	n.font = settings[$ "font"] ?? fnt_default
 	n.gui = settings[$ "gui"] ?? false
 }
+
+function rand_item(arr) {
+	return arr[irandom(array_length(arr) - 1)]	
+}

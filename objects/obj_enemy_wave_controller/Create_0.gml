@@ -4,6 +4,8 @@ wave_points = 100
 cur_wave = 0
 is_wave_cleared = true
 
+spawn_boss = false
+
 tile_size = 16
 
 def_wave_cooldown = 3 * 60

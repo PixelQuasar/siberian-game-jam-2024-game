@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"death_handler",
+  "%Name":"DeathHandler",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"death_handler",
+  "name":"DeathHandler",
   "parent":{
     "name":"character",
     "path":"folders/Scripts/character.yy",

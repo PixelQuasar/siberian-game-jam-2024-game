@@ -30,6 +30,7 @@ global.player_is_dead = false
 
 global.waves_amount = 1
 global.items_collected = {}
+global.spawn_boss = false
 
 
 room_goto(rm_room_1);

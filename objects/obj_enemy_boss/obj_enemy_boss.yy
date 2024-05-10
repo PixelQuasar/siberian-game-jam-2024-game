@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_portal_spawnpoint",
-  "eventList":[],
+  "%Name":"obj_enemy_boss",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_portal_spawnpoint",
+  "name":"obj_enemy_boss",
   "overriddenProperties":[],
   "parent":{
     "name":"enemies",
     "path":"folders/Objects/enemies.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_enemy",
+    "path":"objects/obj_enemy/obj_enemy.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,9 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spawnable",
-    "path":"sprites/spr_spawnable/spr_spawnable.yy",
+    "name":"spr_wave_flag",
+    "path":"sprites/spr_wave_flag/spr_wave_flag.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

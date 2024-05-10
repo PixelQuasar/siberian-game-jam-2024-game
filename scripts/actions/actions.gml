@@ -1,3 +1,7 @@
+function action_idle() {
+	
+}
+
 function action_move_random () {
 	if (action_timer == action_max_timer) { // first frame of an action
 		spd = default_spd;
@@ -54,6 +58,7 @@ function action_move_rush() {
 		action_max_timer = global.IDLE_ACTION.min_len; // time to rest after productive rush!
 		action_timer = global.IDLE_ACTION.min_len;
 		current_action = global.IDLE_ACTION;
+		action = action_idlea
 	}
 	else { // action on-update
 		spd *= 0.97;
@@ -108,6 +113,39 @@ function action_spread_shoot() {
 	}
 	else if (action_timer == 1) { // last frame of an action
 		// EMPTY
+	}
+	else { // action on-update
+		// EMPTY
+	}
+}
+
+function action_circle_shoot() {
+	if (action_timer == action_max_timer) { // first frame of an action
+		if (!instance_exists(obj_player)) return;
+	
+		for (var i = 0; i < 360; i += 20) {
+			var n = instance_create_layer(
+				x, y,
+				"Instances", obj_enemy_gunner_projectile
+			);
+			n.dir = i;
+		}
+	}
+	else if (action_timer == 1) { // last frame of an action
+		// EMPTY
+	}
+	else { // action on-update
+		// EMPTY
+	}
+}
+
+
+function action_summon(obj, xx, yy) {
+	if (action_timer == action_max_timer) { // first frame of an action
+		// EMPTY
+	}
+	else if (action_timer == 1) { // last frame of an action
+		instance_create_layer(xx, yy, "Instances", obj)
 	}
 	else { // action on-update
 		// EMPTY
