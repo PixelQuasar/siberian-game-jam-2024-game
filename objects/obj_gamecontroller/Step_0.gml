@@ -7,6 +7,13 @@ else {
 	global.e_pressed = false;
 }
 
+if (keyboard_check(ord("F"))) {
+	global.f_pressed = true;
+}
+else {
+	global.f_pressed = false;
+}
+
 if keyboard_check(ord("D")) or keyboard_check(ord("W"))
 or keyboard_check(ord("A")) or keyboard_check(ord("S")){
 	global.move = true;
@@ -57,9 +64,4 @@ if global.move {
 if keyboard_check_pressed(vk_space){
 	global.roll = true;
 	alarm[0] = 20;
-}
-
-if (!instance_exists(obj_item) && !instance_exists(obj_enemy_wave_controller)) {
-	start_waves(3, 100 + 20 * cur_level)
-	cur_level++
 }

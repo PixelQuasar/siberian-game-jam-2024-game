@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy_spawn_point",
+  "%Name":"obj_portal",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemy_spawn_point",
+  "name":"obj_portal",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemies",
-    "path":"folders/Objects/enemies.yy",
+    "name":"misc",
+    "path":"folders/Objects/misc.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -35,5 +36,5 @@
     "path":"sprites/spr_enemy_spawn_point/spr_enemy_spawn_point.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
