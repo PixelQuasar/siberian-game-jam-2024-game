@@ -45,7 +45,7 @@ function movement_manager() {
 	}
 
 if run_frame <= 3 {
-		run_frame += global.max_speed/20;	
+		run_frame += global.max_speed/30;	
 } else {
 	run_frame = 0;	
 }
