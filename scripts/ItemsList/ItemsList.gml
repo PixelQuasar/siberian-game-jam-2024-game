@@ -1,29 +1,34 @@
 global.items = {
 	glasses: {
-		name: "Очки",
-		description: "Повышают шанс крита.",
+		name: "Lucku bullet",
+		description: "Increasing critical damage chance. Critical damage = 200% of  basic damage.",
 		visible: false,
-		sprite: spr_glasses,
+		sprite_id: 0,
+		//sprite: spr_glasses,
 		on_pickup: function() {
 			global.crit_chance += 0.1
 		}
 	},
 	armorplate: {
-		name: "Бронепластина",
-		description: "Немного повышает броню.",
+		name: "Life potion",
+		description: "Increasing max HP.",
 		visible: false,
-		sprite: spr_armorplate,
+		sprite_id: 1,
+		//sprite: spr_armorplate,
 		on_pickup: function() {
-			global.armor += 1
+			global.max_hp += 25;
+			global.hp += 25;
 		}
 	},
 	energydrink: {
-		name: "Энергетик",
-		description: "Повышает скорость передвижения",
+		name: "Brand new showel",
+		description: "Increasing damage and attack speed.",
 		visible: false,
-		sprite: spr_energydrink,
+		sprite_id: 0,
+		//sprite: spr_energydrink,
 		on_pickup: function() {
-			global.max_speed += 1
+			global.damage += 5;
+			global.attack_speed *= 0.85;
 		}
 	},
 }

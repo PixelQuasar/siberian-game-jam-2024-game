@@ -1,7 +1,7 @@
 x_start = 40
 y_start = 20
 
-gui_scale = 4
+gui_scale = 2
 
 items_per_row = 8
 
