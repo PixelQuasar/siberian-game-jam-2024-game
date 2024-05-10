@@ -66,6 +66,8 @@ if run_frame <= 3 {
 }
 
 
+depth = -(y/16);
+
 if (global.pause) {
 	return
 }
