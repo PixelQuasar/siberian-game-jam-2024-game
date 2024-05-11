@@ -65,16 +65,65 @@ global.items = {
 			global.roll_bomb_scale += 1
 		}
 	},
+	zombie_finger: {
+		name: "Палец зомби",
+		description: "Продлевает неуязвимость после\nполучения урона.",
+		visible: false,
+		sprite_id: 6,
+		on_pickup: function() {
+			global.default_immune_to_damage_timer += 10;
+		}
+	},
 	vampire_eye: {
 		name: "Глаз вампира",
 		description: "+5% вампиризма.",
 		visible: false,
-		sprite_id: 12,
+		sprite_id: 13,
 		on_pickup: function() {
-			
+			global.vampirism += 0.05;
 		}
-	}
-	
+	},
+	letter: {
+		name: "Письмо куда надо",
+		description: "Понижает накопленную сложность.",
+		visible: false,
+		sprite_id: 10,
+		on_pickup: function() {
+			global.cur_level--;
+			global.waves_amount--;
+		}
+	},
+	carrot: {
+		name: "Морковь",
+		description: "Повышает скорость атаки и шанс крита.",
+		visible: false,
+		sprite_id: 5,
+		on_pickup: function() {
+			global.cur_level--;
+			global.waves_amount--;
+		}
+	},
+	life_crystal: {
+		name: "Кристалл жизни",
+		description: "Повышает максимальное здоровье/nи броню",
+		visible: false,
+		sprite_id: 9,
+		on_pickup: function() {
+			global.max_hp += 13;
+			global.hp += 13;
+			global.armor += 1;
+		}
+	},
+		life_crystal: {
+		name: "Кристалл смерти",
+		description: "Повышает урон и шанс крита",
+		visible: false,
+		sprite_id: 8,
+		on_pickup: function() {
+			global.crit_chance += 0.1;
+			global.damage *= 1.1;
+		}
+	},
 }
 
 global.items_list = struct_get_names(global.items)

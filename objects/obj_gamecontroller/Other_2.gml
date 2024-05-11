@@ -1,3 +1,4 @@
+
 // camera & global
 global.camera_mode = false;
 global.solid_objs = [obj_wall]
@@ -27,6 +28,7 @@ global.armor = 0
 global.default_immune_to_damage_timer = 120;
 global.immune_to_damage_timer = 0;
 global.player_is_dead = false
+global.vampirism = 0;
 
 global.waves_amount = 1
 global.items_collected = {}

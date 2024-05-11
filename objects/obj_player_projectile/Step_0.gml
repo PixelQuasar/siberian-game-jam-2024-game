@@ -28,6 +28,7 @@ function enemy_damage_collision_handler() {
 		audio_play_sound(snd_enemy_damage, 1, 0, 0.5);
 		n.immune_to_damage_timer = global.default_immune_to_damage_timer;
 		var dmg = damage
+		global.hp = min(global.max_hp, global.hp + damage * global.vampirism);
 		if (random(1) <= global.crit_chance) {
 			dmg *= 2
 			create_fly_message(x, y, "Crit!")
