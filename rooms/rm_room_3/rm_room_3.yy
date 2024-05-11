@@ -34,10 +34,19 @@
     {"name":"inst_9D23B8C","path":"rooms/rm_room_3/rm_room_3.yy",},
     {"name":"inst_814334E","path":"rooms/rm_room_3/rm_room_3.yy",},
     {"name":"inst_1636F20D","path":"rooms/rm_room_3/rm_room_3.yy",},
+    {"name":"inst_4338B7D5","path":"rooms/rm_room_3/rm_room_3.yy",},
+    {"name":"inst_355E3CD5","path":"rooms/rm_room_3/rm_room_3.yy",},
+    {"name":"inst_7092B606","path":"rooms/rm_room_3/rm_room_3.yy",},
+    {"name":"inst_4045691D","path":"rooms/rm_room_3/rm_room_3.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances_overlay","depth":-200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances_overlay","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Instances_overlay","depth":-200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"","%Name":"inst_4338B7D5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4338B7D5","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2112.0,"y":1072.0,},
+        {"$GMRInstance":"","%Name":"inst_355E3CD5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_355E3CD5","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1856.0,"y":1296.0,},
+        {"$GMRInstance":"","%Name":"inst_7092B606","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7092B606","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1360.0,"y":1200.0,},
+        {"$GMRInstance":"","%Name":"inst_4045691D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4045691D","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1968.0,"y":944.0,},
+      ],"layers":[],"name":"Instances_overlay","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tiles_top","depth":-100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tiles_top","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":313,"SerialiseWidth":313,"TileCompressedData":[
           -75,0,-9,-2147483648,-59,182,-170,-2147483648,-75,0,-9,-2147483648,-59,182,-170,-2147483648,-75,0,-9,
           -2147483648,-59,182,-170,-2147483648,-75,0,-9,-2147483648,-59,182,-170,-2147483648,-75,0,-9,-2147483648,

@@ -12,7 +12,7 @@ global.dodge_chance = 0;
 global.pause = false;
 
 // player
-global.max_hp = 100;
+global.max_hp = 75;
 global.hp = global.max_hp;
 global.roll_bomb_scale = 0
 global.crit_chance = 0.1;

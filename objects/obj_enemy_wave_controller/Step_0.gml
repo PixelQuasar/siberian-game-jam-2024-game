@@ -101,7 +101,7 @@ if (instance_number(obj_enemy) == 0) {
 			cur_wave_cooldown--
 		}
 	} else {
-		if (global.progress == 3) {
+		if (global.progress >= 5) {
 			room_goto(rm_intro);
 		}
 		
