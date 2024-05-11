@@ -1,0 +1,1 @@
+draw_sprite(sprite_index, image_index, x + irandom_range(-2, 2), y + irandom_range(-2, 2));

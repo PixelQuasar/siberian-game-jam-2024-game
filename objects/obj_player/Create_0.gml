@@ -1,5 +1,9 @@
 depth = -3;
 
+ww = window_get_width();
+wh = window_get_height();
+margin = 16;
+
 roll_frame = 0;
 run_frame = 0;
 attack_frame = 0;
