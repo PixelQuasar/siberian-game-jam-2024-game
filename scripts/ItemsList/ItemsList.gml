@@ -90,7 +90,6 @@ global.items = {
 		sprite_id: 10,
 		on_pickup: function() {
 			global.cur_level--;
-			global.waves_amount--;
 		}
 	},
 	carrot: {

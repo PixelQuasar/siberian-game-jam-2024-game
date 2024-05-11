@@ -36,10 +36,17 @@
     {"name":"inst_47894DC","path":"rooms/rm_room_4/rm_room_4.yy",},
     {"name":"inst_7A0D3C11","path":"rooms/rm_room_4/rm_room_4.yy",},
     {"name":"inst_D098A82","path":"rooms/rm_room_4/rm_room_4.yy",},
+    {"name":"inst_79AE7D53","path":"rooms/rm_room_4/rm_room_4.yy",},
+    {"name":"inst_481644CB","path":"rooms/rm_room_4/rm_room_4.yy",},
+    {"name":"inst_3CF51ACD","path":"rooms/rm_room_4/rm_room_4.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances_overlay","depth":-400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances_overlay","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Instances_overlay","depth":-400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"","%Name":"inst_79AE7D53","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_79AE7D53","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1504.0,"y":576.0,},
+        {"$GMRInstance":"","%Name":"inst_481644CB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_481644CB","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1344.0,"y":448.0,},
+        {"$GMRInstance":"","%Name":"inst_3CF51ACD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3CF51ACD","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":320.0,},
+      ],"layers":[],"name":"Instances_overlay","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tiles_top","depth":-300,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tiles_top","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":313,"SerialiseWidth":313,"TileCompressedData":[
           -175,0,-138,-2147483648,-175,0,-138,-2147483648,-175,0,-138,-2147483648,-175,0,-138,-2147483648,-75,
           0,1,210,-15,211,1,212,-83,0,-138,-2147483648,-75,0,1,240,-15,0,1,242,-83,0,-138,-2147483648,-75,0,1,

@@ -8,7 +8,7 @@ function player_handler() {
 	}
 	
 	if (global.f_pressed && is_player_nearby) {
-		if (type == "red") progress++;
+		if (type == "red") global.progress++;
 		global.difficulty = difficulty;
 		global.waves_amount = waves_amount;
 		global.spawn_boss = spawn_boss;

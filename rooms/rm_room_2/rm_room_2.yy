@@ -42,10 +42,19 @@
     {"name":"inst_20E90C58","path":"rooms/rm_room_2/rm_room_2.yy",},
     {"name":"inst_D8683D6","path":"rooms/rm_room_2/rm_room_2.yy",},
     {"name":"inst_3A7783ED","path":"rooms/rm_room_2/rm_room_2.yy",},
+    {"name":"inst_65695A25","path":"rooms/rm_room_2/rm_room_2.yy",},
+    {"name":"inst_F147F02","path":"rooms/rm_room_2/rm_room_2.yy",},
+    {"name":"inst_46FE6BA6","path":"rooms/rm_room_2/rm_room_2.yy",},
+    {"name":"inst_E57C9EE","path":"rooms/rm_room_2/rm_room_2.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances_overlay","depth":-400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances_overlay","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Instances_overlay","depth":-400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"","%Name":"inst_65695A25","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_65695A25","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1792.0,"y":1152.0,},
+        {"$GMRInstance":"","%Name":"inst_F147F02","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F147F02","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1664.0,"y":1376.0,},
+        {"$GMRInstance":"","%Name":"inst_46FE6BA6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46FE6BA6","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1472.0,"y":1472.0,},
+        {"$GMRInstance":"","%Name":"inst_E57C9EE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E57C9EE","objectId":{"name":"obj_enemy_spawn_point","path":"objects/obj_enemy_spawn_point/obj_enemy_spawn_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":1536.0,},
+      ],"layers":[],"name":"Instances_overlay","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tiles_top","depth":-300,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tiles_top","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":313,"SerialiseWidth":313,"TileCompressedData":[
           -1878,-2147483648,-15,0,-298,-2147483648,-15,0,-298,-2147483648,-15,0,-298,-2147483648,-15,0,-298,-2147483648,
           -15,0,-298,-2147483648,-15,0,-298,-2147483648,-15,0,-298,-2147483648,-15,0,-298,-2147483648,-15,0,-298,

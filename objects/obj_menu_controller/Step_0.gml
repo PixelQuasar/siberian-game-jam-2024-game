@@ -11,6 +11,7 @@ if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(vk_left)) {
 if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("E"))) {
 	switch (current_option) {
 		case 0: {
+			audio_stop_all();
 			global.music = audio_play_sound(music_battle, 1, true);
 			room_goto(rm_room_1);
 			break;
