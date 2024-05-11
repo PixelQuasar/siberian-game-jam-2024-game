@@ -1,3 +1,6 @@
+if (gui)
+	return
+	
 draw_set_halign(fa_center)
 draw_set_font(font)
 

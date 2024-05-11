@@ -56,9 +56,17 @@ global.items = {
 			global.dodge_chance += 0.1;
 		}
 	},
+	bomb_plane: {
+		name: "Бомбардировщик",
+		description: "Оставляет бомбу после кувырка. Увеличивает радиус взрыва.",
+		visible: false,
+		sprite_id: 11,
+		on_pickup: function() {
+			global.roll_bomb_scale += 1
+		}
+	},
 }
 
-global.items_collected = {}
 global.items_list = struct_get_names(global.items)
 
 

@@ -2,7 +2,7 @@ function player_damage_collision_handler() {
 	if (is_dead || global.immune_to_damage_timer){
 		return
 	}
-	
+
 	if (place_meeting(x, y, obj_player) && !global.player_is_dead){
 		global.immune_to_damage_timer = global.default_immune_to_damage_timer;
 		screenshake(60, 5);
@@ -37,6 +37,8 @@ function draw_handler() {
 	} else {
 		image_xscale = 1;
 	}
+if (hp <= 0 && !is_dead) {
+	death_handler()
 }
 
 if (global.pause || is_appearing)

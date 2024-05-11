@@ -6,8 +6,8 @@
   "name":"obj_portal_spawnpoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"misc",
-    "path":"folders/Objects/misc.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,

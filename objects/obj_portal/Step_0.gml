@@ -9,6 +9,8 @@ function player_handler() {
 	
 	if (global.f_pressed && is_player_nearby) {
 		global.difficulty = difficulty;
+		global.waves_amount = waves_amount
+		global.spawn_boss = spawn_boss
 		room_goto(next_room);
 	}
 }
