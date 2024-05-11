@@ -1,5 +1,8 @@
 event_inherited();
 
+image_xscale = 2;
+image_yscale = 2;
+
 default_spd = 4;
 hp = 250;
 max_hp = 250;
@@ -7,6 +10,14 @@ damage = 20;
 
 function summon() {
 	action_summon(rand_item([obj_enemy_gunner, obj_enemy_spreader, obj_enemy_melee]), x, y)	
+}
+
+function draw_handler() {
+	if !(dir < 9 || dir > 270) {
+		image_xscale = -2;
+	} else {
+		image_xscale = 2;
+	}
 }
 
 actions_pool = [

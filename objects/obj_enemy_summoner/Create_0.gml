@@ -2,7 +2,7 @@ event_inherited();
 
 default_spd = 2;
 
-image_alpha = 0.5
+//image_alpha = 0.5
 
 function summon() {
 	action_summon(rand_item([obj_enemy_gunner, obj_enemy_spreader]), x, y)	

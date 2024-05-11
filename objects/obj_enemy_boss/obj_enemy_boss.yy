@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wave_flag",
-    "path":"sprites/spr_wave_flag/spr_wave_flag.yy",
+    "name":"spr_boss_run",
+    "path":"sprites/spr_boss_run/spr_boss_run.yy",
   },
   "spriteMaskId":null,
   "visible":true,

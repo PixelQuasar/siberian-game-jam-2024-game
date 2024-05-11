@@ -1,6 +1,10 @@
 if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_right)) {
-	current_option = (current_option - 1) % array_length(options);
 	audio_play_sound(snd_next, 1, 0, 1);
+	if current_option > 0 {
+	current_option -= 1;
+	} else {
+		current_option = array_length(options)-1;
+	}
 }
 
 if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(vk_left)) {
