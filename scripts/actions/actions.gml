@@ -58,7 +58,7 @@ function action_move_rush() {
 		action_max_timer = global.IDLE_ACTION.min_len; // time to rest after productive rush!
 		action_timer = global.IDLE_ACTION.min_len;
 		current_action = global.IDLE_ACTION;
-		action = action_idlea
+		action = action_idle
 	}
 	else { // action on-update
 		spd *= 0.97;
