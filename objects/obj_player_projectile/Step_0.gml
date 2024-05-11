@@ -25,6 +25,7 @@ function enemy_damage_collision_handler() {
 	
 	var n = instance_place(x, y, obj_enemy);
 	if (n != noone && !n.is_dead)	{
+		audio_play_sound(snd_enemy_damage, 1, 0, 0.5);
 		n.immune_to_damage_timer = global.default_immune_to_damage_timer;
 		var dmg = damage
 		if (random(1) <= global.crit_chance) {

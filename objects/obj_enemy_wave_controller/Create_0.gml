@@ -17,3 +17,5 @@ x_margin = 4 * gui_scale
 x_start = window_get_width() / 2
 x_flag_size = sprite_get_width(spr_wave_flag) * gui_scale
 y_start = window_get_height() - x_flag_size - 4 * gui_scale
+
+switch_sound(false);

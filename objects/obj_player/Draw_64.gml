@@ -1,5 +1,4 @@
 draw_set_halign(fa_left)
-draw_text(0, 0, global.hp)
 
 var _text = string(global.hp) + "/" + string(global.max_hp);
 draw_set_color(c_white);

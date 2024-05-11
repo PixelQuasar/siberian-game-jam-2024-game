@@ -101,6 +101,7 @@ if (instance_number(obj_enemy) == 0) {
 			cur_wave_cooldown--
 		}
 	} else {
+		switch_sound(true);
 		spawn_items();
 		spawn_portals();
 		

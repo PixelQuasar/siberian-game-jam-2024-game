@@ -53,18 +53,28 @@ global.items = {
 		sprite_id: 7,
 		on_pickup: function() {
 			global.crit_chance += 0.1;
-			global.dodge_chance += 0.1;
+			global.dodge_chance += 2;
 		}
 	},
 	bomb_plane: {
-		name: "Бомбардировщик",
-		description: "Оставляет бомбу после кувырка. Увеличивает радиус взрыва.",
+		name: "Макет самолета",
+		description: "Оставляет бомбу после кувырка.\n следующие подборы увеличивают радиус взрыва.",
 		visible: false,
 		sprite_id: 11,
 		on_pickup: function() {
 			global.roll_bomb_scale += 1
 		}
 	},
+	vampire_eye: {
+		name: "Глаз вампира",
+		description: "+5% вампиризма.",
+		visible: false,
+		sprite_id: 12,
+		on_pickup: function() {
+			
+		}
+	}
+	
 }
 
 global.items_list = struct_get_names(global.items)

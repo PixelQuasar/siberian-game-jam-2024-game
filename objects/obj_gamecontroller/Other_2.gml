@@ -34,3 +34,5 @@ global.spawn_boss = false
 
 
 room_goto(rm_room_1);
+
+global.music = audio_play_sound(music_battle, 1, true);
