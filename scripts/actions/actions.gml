@@ -68,8 +68,14 @@ function action_move_rush() {
 
 function action_shoot() {
 	if (action_timer == action_max_timer) { // first frame of an action
+		var _msg = instance_create_layer(x, y, "Instances_overlay", obj_fly_message);
+		_msg.message = "!!!";
+		
+	}
+	else if (action_timer == 1) { // last frame of an action
+		audio_play_sound(snd_enemy_shot,1, 0, 1);
 		if (!instance_exists(obj_player)) return;
-	
+		
 		var _dir = point_direction(x, y, obj_player.x, obj_player.y);
 	
 		var _new_projectile = instance_create_layer(
@@ -77,9 +83,6 @@ function action_shoot() {
 			"Instances", obj_enemy_gunner_projectile
 		);
 		_new_projectile.dir = _dir;
-	}
-	else if (action_timer == 1) { // last frame of an action
-		// EMPTY
 	}
 	else { // action on-update
 		// EMPTY
@@ -89,6 +92,11 @@ function action_shoot() {
 
 function action_spread_shoot() {
 	if (action_timer == action_max_timer) { // first frame of an action
+		var _msg = instance_create_layer(x, y, "Instances_overlay", obj_fly_message);
+		_msg.message = "!!!";
+	}
+	else if (action_timer == 1) { // last frame of an action
+		audio_play_sound(snd_enemy_shot,1, 0, 1);
 		if (!instance_exists(obj_player)) return;
 	
 		var _dir = point_direction(x, y, obj_player.x, obj_player.y);
@@ -111,9 +119,6 @@ function action_spread_shoot() {
 		);
 		n.dir = (_dir + 360 - 15) % 360;
 	}
-	else if (action_timer == 1) { // last frame of an action
-		// EMPTY
-	}
 	else { // action on-update
 		// EMPTY
 	}
@@ -121,6 +126,11 @@ function action_spread_shoot() {
 
 function action_circle_shoot() {
 	if (action_timer == action_max_timer) { // first frame of an action
+		var _msg = instance_create_layer(x, y, "Instances_overlay", obj_fly_message);
+		_msg.message = "!!!";
+	}
+	else if (action_timer == 1) { // last frame of an action
+		audio_play_sound(snd_enemy_strong_shot, 1, 0, 0.5);
 		if (!instance_exists(obj_player)) return;
 	
 		for (var i = 0; i < 360; i += 20) {
@@ -130,9 +140,6 @@ function action_circle_shoot() {
 			);
 			n.dir = i;
 		}
-	}
-	else if (action_timer == 1) { // last frame of an action
-		// EMPTY
 	}
 	else { // action on-update
 		// EMPTY

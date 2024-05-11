@@ -27,7 +27,7 @@ function spawn_portals() {
 }
 
 function spawn_items() {
-	var _number = max(2, ceil((global.difficulty - 50) / 50) * 2)
+	var _number = max(3, ceil((global.difficulty - 50) / 50) * 3)
 	
 	for (var i = 0; i < _number; i++) {
 		var n = get_random_spawn_point();
@@ -101,6 +101,11 @@ if (instance_number(obj_enemy) == 0) {
 			cur_wave_cooldown--
 		}
 	} else {
+		if (global.progress == 3) {
+			room_goto(rm_intro);
+		}
+		
+		switch_sound(true);
 		spawn_items();
 		spawn_portals();
 		

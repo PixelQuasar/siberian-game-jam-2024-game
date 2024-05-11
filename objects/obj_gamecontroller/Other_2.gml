@@ -1,3 +1,4 @@
+
 // camera & global
 global.camera_mode = false;
 global.solid_objs = [obj_wall]
@@ -11,7 +12,7 @@ global.dodge_chance = 0;
 global.pause = false;
 
 // player
-global.max_hp = 50;
+global.max_hp = 100;
 global.hp = global.max_hp;
 global.roll_bomb_scale = 0
 global.crit_chance = 0.1;
@@ -27,10 +28,15 @@ global.armor = 0
 global.default_immune_to_damage_timer = 120;
 global.immune_to_damage_timer = 0;
 global.player_is_dead = false
+global.vampirism = 0;
+
+global.progress = 0;
 
 global.waves_amount = 1
 global.items_collected = {}
 global.spawn_boss = false
 
 
-room_goto(rm_room_1);
+room_goto(rm_menu);
+
+// global.music = audio_play_sound(music_battle, 1, true);

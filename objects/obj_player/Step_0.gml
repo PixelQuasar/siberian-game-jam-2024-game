@@ -143,6 +143,7 @@ if (global.hp <= 0 && !global.player_is_dead) {
 movement_manager();
 
 if (mouse_check_button(mb_left) and can_shoot) {
+	audio_play_sound(snd_palyer_shot_2, 1, 0, 1);
 	var _dir = point_direction(x, y, mouse_x, mouse_y);
 	
 	var _new_projectile = instance_create_layer(
@@ -163,6 +164,7 @@ if (mouse_check_button(mb_left) and can_shoot) {
 
 	
 } else if (mouse_check_button(mb_right) and can_swing) {
+	audio_play_sound(snd_player_shot, 1, 0, 1);
 	var _dir = point_direction(x, y, mouse_x, mouse_y);
 	
 	var _new_projectile = instance_create_layer(

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"switch_sound",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"switch_sound",
+  "parent":{
+    "name":"global",
+    "path":"folders/Scripts/global.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
