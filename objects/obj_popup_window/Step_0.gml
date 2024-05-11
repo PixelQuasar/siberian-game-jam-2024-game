@@ -3,7 +3,8 @@ x_offset = ceil(x_offset);
 
 if (global.e_pressed && is_active) {
 	is_active = false;
-	global.pause--
+	global.pause--;
+	audio_play_sound(snd_next, 1, 0, 1);
 	x_offset_target = ww + 1000;
 }
 
