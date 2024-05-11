@@ -15,4 +15,6 @@ function player_handler() {
 	}
 }
 
+image_angle++;
+
 player_handler();

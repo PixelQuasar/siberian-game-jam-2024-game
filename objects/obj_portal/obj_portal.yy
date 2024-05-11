@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_spawn_point",
-    "path":"sprites/spr_enemy_spawn_point/spr_enemy_spawn_point.yy",
+    "name":"spr_blue_portal",
+    "path":"sprites/spr_blue_portal/spr_blue_portal.yy",
   },
   "spriteMaskId":null,
   "visible":true,

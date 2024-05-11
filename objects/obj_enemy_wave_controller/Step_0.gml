@@ -1,7 +1,6 @@
 function spawn_portals() {
 	for (var i = 0; i < instance_number(obj_portal_spawnpoint); i++) {
 		var _current_spawnpoint = instance_find(obj_portal_spawnpoint, i);
-		if (irandom_range(0, 3) == 0) continue;
 		
 		var _diff = global.difficulties[irandom(array_length(global.difficulties) - 1)]
 		var _new_portal = instance_create_layer(_current_spawnpoint.x, _current_spawnpoint.y, "floor", obj_portal);
@@ -28,7 +27,7 @@ function spawn_portals() {
 }
 
 function spawn_items() {
-	var _number = max(1, ceil((global.difficulty - 50) / 50))
+	var _number = max(2, ceil((global.difficulty - 50) / 50) * 2)
 	
 	for (var i = 0; i < _number; i++) {
 		var n = get_random_spawn_point();
