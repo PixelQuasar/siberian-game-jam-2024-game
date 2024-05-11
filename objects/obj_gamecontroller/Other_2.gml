@@ -30,6 +30,8 @@ global.immune_to_damage_timer = 0;
 global.player_is_dead = false
 global.vampirism = 0;
 
+global.progress = 0;
+
 global.waves_amount = 1
 global.items_collected = {}
 global.spawn_boss = false

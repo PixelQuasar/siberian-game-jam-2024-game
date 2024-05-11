@@ -101,6 +101,10 @@ if (instance_number(obj_enemy) == 0) {
 			cur_wave_cooldown--
 		}
 	} else {
+		if (global.progress == 3) {
+			room_goto(rm_intro);
+		}
+		
 		switch_sound(true);
 		spawn_items();
 		spawn_portals();
